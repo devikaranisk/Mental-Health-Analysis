@@ -50,6 +50,8 @@ Visual Studio code(prefered code editor) -[ https://code.visualstudio.com/downlo
 
 GitHub -[https://desktop.github.com/download/](https://desktop.github.com/download/)
 
+Jupyter -[https://www.anaconda.com/download](https://www.anaconda.com/download)
+
 
 🛠 Installation & Run
 1. Clone the repository
