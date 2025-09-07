@@ -1,6 +1,6 @@
 📖 Introduction
 
-This project is a Flask-based machine learning web application that analyzes adolescent mental health.
+A Flask-based machine learning for mental health analysis. Supports text, video, and symptom form inputs for condition prediction. Includes client registration, authentication, storage of doctor/parent contacts, and an integrated 108 emergency support option.
 It supports multi-modal inputs:
 
 ✅ Text-based input
@@ -54,7 +54,7 @@ Jupyter Notebook -[https://www.anaconda.com/download](https://www.anaconda.com/d
 
 
 🛠 Installation & Run
-1. Clone the repository
+Clone the repository
 <pre> ''' 
   git clone https://github.com/devikaranisk/Mental-Health-Analysis
   cd Mental-health-analysis
@@ -148,7 +148,7 @@ Run the Flask app
 
   Check the terminal running python app.py for errors or stack traces.
   
-#⚠️ Common Issues & Solutions
+⚠️ Common Issues & Solutions
 
 1. FileNotFoundError
 
