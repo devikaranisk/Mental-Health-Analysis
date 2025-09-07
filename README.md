@@ -108,6 +108,7 @@ Run the Flask app
     -F "parent_name=Parent Y" \
     -F "parent_email=parenty@example.com" \
     -F "parent_phone=9988776655" \
+    
 2. Login
   Enter your registered email and password.
   
@@ -149,19 +150,25 @@ Run the Flask app
 
 1. FileNotFoundError
    Cause: The app cannot find the required model files.
+
    Solution: Make sure model.pkl and label_encoder.pkl are inside the backend/ folder.
    Port Conflict
+
    Cause: Another application is already using port 5000.
 
 3. Solution:
    Stop the other app using port 5000 or
+
    Run Flask on a different port:
-   <pre>'''
+
+    <pre>'''
      python app.py --port 5001
      '''</pre>
 
-3. JSON Read/Write Errors
-   Cause: The app cannot read/write the users.json file due to permission issues.
+5. JSON Read/Write Errors
+
+    Cause: The app cannot read/write the users.json file due to permission issues.
+
    Solution:
       Make sure users.json exists.
       Check that your user has read/write permissions for the file.
