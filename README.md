@@ -58,7 +58,7 @@ Clone the repository
 <pre> ''' 
   git clone https://github.com/devikaranisk/Mental-Health-Analysis
   cd Mental-health-analysis
-'''</pre>
+  '''</pre>
 
 Create a virtual environment
 <pre>'''
@@ -67,26 +67,25 @@ Create a virtual environment
   source venv/bin/activate
   # Windows (PowerShell)
   .\venv\Scripts\Activate.ps1
-'''</pre>
+  '''</pre>
 
 Install dependencies
 <pre>''' 
   pip install -r requirements.txt
-'''</pre>
+  '''</pre>
 
 Or manually if requirements.txt is missing:
 <pre>'''
   pip install Flask pandas joblib scikit-learn
-'''</pre>
+  '''</pre>
 
 Run the Flask app
 <pre>''' 
   python app.py
-'''</pre>
+  '''</pre>
 
 ✅ Step-by-Step Testing & Verification
 1. Register a New Client
-  
   Fill in the registration form with:
   
   Client Info: name, email, password, phone
@@ -109,9 +108,7 @@ Run the Flask app
     -F "parent_name=Parent Y" \
     -F "parent_email=parenty@example.com" \
     -F "parent_phone=9988776655" \
-
 2. Login
-
   Enter your registered email and password.
   
   Expected: Redirects to the dashboard/index page.
@@ -151,27 +148,20 @@ Run the Flask app
 ⚠️ Common Issues & Solutions
 
 1. FileNotFoundError
+   Cause: The app cannot find the required model files.
+   Solution: Make sure model.pkl and label_encoder.pkl are inside the backend/ folder.
+   Port Conflict
+   Cause: Another application is already using port 5000.
 
-  Cause: The app cannot find the required model files.
-  
-  Solution: Make sure model.pkl and label_encoder.pkl are inside the backend/ folder.
-  Port Conflict
-
-Cause: Another application is already using port 5000.
-
-2. Solution:
-
-  Stop the other app using port 5000 or
-  
-  Run Flask on a different port:
-  <pre>'''
-    python app.py --port 5001
-  '''</pre>
+3. Solution:
+   Stop the other app using port 5000 or
+   Run Flask on a different port:
+   <pre>'''
+     python app.py --port 5001
+     '''</pre>
 
 3. JSON Read/Write Errors
-
-  Cause: The app cannot read/write the users.json file due to permission issues.
-  
-  Solution:
+   Cause: The app cannot read/write the users.json file due to permission issues.
+   Solution:
       Make sure users.json exists.
       Check that your user has read/write permissions for the file.
