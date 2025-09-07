@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emergency Contacts</title>
+</head>
+<body>
+  <h2>Emergency Contacts</h2>
+
+  <h3>Doctor</h3>
+  <p>{{ user.doctor_name }} - {{ user.doctor_email }} - {{ user.doctor_phone }}</p>
+
+  <h3>Relative 1</h3>
+  <p>{{ user.relative1_name }} - {{ user.relative1_email }} - {{ user.relative1_phone }}</p>
+
+  <h3>Relative 2</h3>
+  <p>{{ user.relative2_name }} - {{ user.relative2_email }} - {{ user.relative2_phone }}</p>
+
+  <p><a href="{{ url_for('predict') }}">Back</a></p>
+</body>
+</html>

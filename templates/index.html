@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Symptom Checker</title>
+</head>
+<body>
+  <h2>Symptom Checker</h2>
+  
+  <!-- Form to submit symptoms -->
+  <form action="{{ url_for('predict') }}" method="POST">
+    {% for symptom in symptoms %}
+      <label>
+        <input type="checkbox" name="{{ symptom }}" value="1"> {{ symptom.replace('_', ' ').capitalize() }}
+      </label><br>
+    {% endfor %}
+
+    <br>
+    <button type="submit">Predict</button>
+  </form>
+
+ {% if prediction %}
+  <h3>Predicted Condition: {{ prediction }}</h3>
+{% endif %}
+
+<a href="{{ url_for('predict_text') }}">
+    <button>Go to Text Prediction</button>
+</a>
+
+  
+  <p><a href="{{ url_for('logout') }}">Logout</a></p>
+</body>
+</html>

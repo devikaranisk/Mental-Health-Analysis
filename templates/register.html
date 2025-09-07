@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+  <h2>Register</h2>
+  <form method="POST">
+    <h3>User Info</h3>
+    <input type="text" name="name" placeholder="Name" required><br>
+    <input type="email" name="email" placeholder="Email" required><br>
+    <input type="password" name="password" placeholder="Password" required><br>
+    <input type="text" name="phone" placeholder="Phone" required><br>
+
+    <h3>Doctor Info</h3>
+    <input type="text" name="doctor_name" placeholder="Doctor Name"><br>
+    <input type="email" name="doctor_email" placeholder="Doctor Email"><br>
+    <input type="text" name="doctor_phone" placeholder="Doctor Phone"><br>
+
+    <h3>Relative 1</h3>
+    <input type="text" name="relative1_name" placeholder="Relative 1 Name"><br>
+    <input type="email" name="relative1_email" placeholder="Relative 1 Email"><br>
+    <input type="text" name="relative1_phone" placeholder="Relative 1 Phone"><br>
+
+    <h3>Relative 2</h3>
+    <input type="text" name="relative2_name" placeholder="Relative 2 Name"><br>
+    <input type="email" name="relative2_email" placeholder="Relative 2 Email"><br>
+    <input type="text" name="relative2_phone" placeholder="Relative 2 Phone"><br>
+
+    <br><button type="submit">Register</button>
+  </form>
+  <p>Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
+</body>
+</html>

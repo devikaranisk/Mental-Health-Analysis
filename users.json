@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "email": "user1@example.com",
+    "password": "123456",
+    "doctor_email": "doctor@example.com",
+    "doctor_phone": "9999999999",
+    "relative1_email": "relative1@example.com",
+    "relative2_email": "relative2@example.com"
+  },
+  {
+    "id": 2,
+    "email": "user2@example.com",
+    "password": "abcdef",
+    "doctor_email": "doctor2@example.com",
+    "doctor_phone": "8888888888",
+    "relative1_email": "relative1_2@example.com",
+    "relative2_email": "relative2_2@example.com"
+  },
+  {
+    "name": "cheee",
+    "email": "cheee1@gmail.com",
+    "password": "12345678",
+    "phone": "2345678912",
+    "doctor_name": "dooo",
+    "doctor_email": "dooo@gmail.com",
+    "doctor_phone": "1289562365",
+    "relative1_name": "reee1",
+    "relative1_email": "reee1@gmail.com",
+    "relative1_phone": "2983745628",
+    "relative2_name": "reee2",
+    "relative2_email": "reee2@gmail.com",
+    "relative2_phone": "3829472836",
+    "id": 3
+  },
+  {
+    "name": "Devikarani S K",
+    "email": "skdevikarani@gmail.com",
+    "password": "Devika@5",
+    "phone": "6360758771",
+    "doctor_name": "",
+    "doctor_email": "",
+    "doctor_phone": "",
+    "relative1_name": "",
+    "relative1_email": "",
+    "relative1_phone": "",
+    "relative2_name": "",
+    "relative2_email": "",
+    "relative2_phone": "",
+    "id": 4
+  },
+  {
+    "name": "dsafcfgcg",
+    "email": "hhgfcb@gmail.com",
+    "password": "abcdef",
+    "phone": "345768765",
+    "doctor_name": "xyz",
+    "doctor_email": "abcd@gmai.com",
+    "doctor_phone": "678697576",
+    "relative1_name": "sdfvb",
+    "relative1_email": "dthr@gmail.com",
+    "relative1_phone": "657685865",
+    "relative2_name": "weaesr",
+    "relative2_email": "hfytf@gmail.com",
+    "relative2_phone": "8765766757",
+    "id": 5
+  }
+]
