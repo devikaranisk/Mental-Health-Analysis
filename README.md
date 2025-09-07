@@ -56,7 +56,7 @@ Jupyter Notebook -[https://www.anaconda.com/download](https://www.anaconda.com/d
 🛠 Installation & Run
 1. Clone the repository
 <pre> ''' 
-  git clone https://github.com/<USERNAME>/Mental-health-analysis.git
+  git clone https://github.com/devikaranisk/Mental-Health-Analysis
   cd Mental-health-analysis
 '''</pre>
 
