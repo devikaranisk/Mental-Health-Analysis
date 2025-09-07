@@ -148,9 +148,30 @@ Run the Flask app
 
   Check the terminal running python app.py for errors or stack traces.
   
-  Common Issues:
+#⚠️ Common Issues & Solutions
+
+1. FileNotFoundError
+
+  Cause: The app cannot find the required model files.
   
-  Issue	                                            Solution
-  FileNotFoundError                                	Place model.pkl & label_encoder.pkl in backend/
-  Port conflict	                                    Stop other apps using port 5000 or change Flask port
-  JSON read/write errors	                          Check permissions for users.json
+  Solution: Make sure model.pkl and label_encoder.pkl are inside the backend/ folder.
+  Port Conflict
+
+Cause: Another application is already using port 5000.
+
+2. Solution:
+
+  Stop the other app using port 5000 or
+  
+  Run Flask on a different port:
+  <pre>'''
+    python app.py --port 5001
+  '''</pre>
+
+3. JSON Read/Write Errors
+
+  Cause: The app cannot read/write the users.json file due to permission issues.
+  
+  Solution:
+      Make sure users.json exists.
+      Check that your user has read/write permissions for the file.
